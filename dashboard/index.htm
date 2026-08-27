@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG County Crime Incident Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="eyebrow">PUBLIC SAFETY DATA ANALYSIS</div>
+
+    <h1>Crime Incident Patterns in Prince George's County</h1>
+
+    <p class="subtitle">
+        Decision-oriented analysis of crime incidents across Prince George's County, Maryland.
+    </p>
+
+    <div class="period">
+        Analysis Period:
+        <strong>August 18, 2024 – August 16, 2026</strong>
+    </div>
+</header>
+
+<main>
+
+<section class="overview">
+
+    <div class="section-label">OVERVIEW</div>
+
+    <h2>Executive Summary</h2>
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+            <span>Total Unique Incidents</span>
+            <strong>48,490</strong>
+        </div>
+
+        <div class="summary-card">
+            <span>Most Common Offense</span>
+            <strong>Theft from Auto</strong>
+            <small>11,847 incidents</small>
+        </div>
+
+        <div class="summary-card">
+            <span>Highest-Activity Division</span>
+            <strong>Division I</strong>
+            <small>10,801 incidents</small>
+        </div>
+
+        <div class="summary-card">
+            <span>Peak Hour</span>
+            <strong>8:00 PM</strong>
+            <small>3,031 incidents</small>
+        </div>
+
+    </div>
+
+    <div class="analyst-note">
+        <strong>Analyst Note:</strong>
+        Property crime represents the majority of recorded incidents, with theft from auto,
+        other theft, and stolen vehicles accounting for the largest offense volumes.
+        Geographic and temporal patterns are examined below to identify areas and periods
+        that may warrant additional public-safety attention.
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="section-label">01</div>
+
+    <h2>Time &amp; Offense</h2>
+
+    <p class="section-description">
+        Examining how incident volume and offense composition changed over the study period.
+    </p>
+
+    <div class="chart-section">
+
+        <h3>Monthly Crime Incidents</h3>
+
+        <img
+            src="../visualizations/sq1_time_offense/monthly_incidents.png"
+            alt="Monthly crime incidents">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Crime Incidents by Offense</h3>
+
+        <img
+            src="../visualizations/sq1_time_offense/incidents_by_offense.png"
+            alt="Crime incidents by offense">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Monthly Trends for Top 5 Offenses</h3>
+
+        <img
+            src="../visualizations/sq1_time_offense/top_5_offense_trends.png"
+            alt="Monthly trends for top five offenses">
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="section-label">02</div>
+
+    <h2>Geography</h2>
+
+    <p class="section-description">
+        Identifying geographic areas with the highest concentrations of recorded incidents.
+    </p>
+
+    <div class="chart-section">
+
+        <h3>Incidents by Police Division</h3>
+
+        <img
+            src="../visualizations/sq2_geography/incidents_by_division.png"
+            alt="Crime incidents by police division">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Incidents by Municipality</h3>
+
+        <img
+            src="../visualizations/sq2_geography/incidents_by_municipality.png"
+            alt="Crime incidents by municipality">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Top 10 Police Beats</h3>
+
+        <img
+            src="../visualizations/sq2_geography/top_10_beats.png"
+            alt="Top ten police beats by incident count">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Top 10 Reporting Areas</h3>
+
+        <img
+            src="../visualizations/sq2_geography/top_10_reporting_areas.png"
+            alt="Top ten reporting areas by incident count">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Top 10 ZIP Codes</h3>
+
+        <img
+            src="../visualizations/sq2_geography/top_10_zip_codes.png"
+            alt="Top ten ZIP codes by incident count">
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="section-label">03</div>
+
+    <h2>Context</h2>
+
+    <p class="section-description">
+        Examining when and where incidents occur to identify recurring contextual patterns.
+    </p>
+
+    <div class="chart-section">
+
+        <h3>Incidents by Day of Week</h3>
+
+        <img
+            src="../visualizations/sq3_context/incidents_by_day_of_week.png"
+            alt="Crime incidents by day of week">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Incidents by Hour</h3>
+
+        <img
+            src="../visualizations/sq3_context/incidents_by_hour.png"
+            alt="Crime incidents by hour">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Incidents by Month</h3>
+
+        <img
+            src="../visualizations/sq3_context/incidents_by_month.png"
+            alt="Crime incidents by month">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Top Location Types</h3>
+
+        <img
+            src="../visualizations/sq3_context/top_10_location_types.png"
+            alt="Top ten location types">
+    </div>
+
+    <div class="chart-section">
+
+        <h3>Top Offenses by Location</h3>
+
+        <img
+            src="../visualizations/sq3_context/top_offenses_by_location.png"
+            alt="Top offenses by location type">
+    </div>
+
+</section>
+
+
+<section class="data-quality">
+
+    <div class="section-label">DATA QUALITY</div>
+
+    <h2>Data Preparation</h2>
+
+    <p>
+        The raw dataset contained <strong>50,095 records</strong>.
+        Exact duplicate rows were removed, resulting in
+        <strong>48,501 records</strong>.
+    </p>
+
+    <ul>
+        <li>1,594 exact duplicate rows removed</li>
+        <li>11 invalid "Copy of" case-number records identified</li>
+        <li>61 incidents have an unknown crime-against category</li>
+        <li>99 records are missing a ZIP code</li>
+        <li>3,111 records are missing a reporting area</li>
+        <li>1 record is missing a police beat</li>
+    </ul>
+
+    <p class="data-note">
+        Missing geographic values were retained rather than artificially assigned,
+        preserving the integrity of the original incident records.
+    </p>
+
+</section>
+
+
+<section class="methodology">
+
+    <div class="section-label">METHOD</div>
+
+    <h2>Analytical Approach</h2>
+
+    <div class="method-grid">
+
+        <div>
+            <h3>Time-Series Analysis</h3>
+            <p>
+                Incident counts were aggregated by month, day of week,
+                and hour to identify temporal patterns and changes.
+            </p>
+        </div>
+
+        <div>
+            <h3>Offense Analysis</h3>
+            <p>
+                Incidents were grouped by offense type and counted using
+                unique case numbers.
+            </p>
+        </div>
+
+        <div>
+            <h3>Geographic Analysis</h3>
+            <p>
+                Incident concentrations were examined across divisions,
+                beats, reporting areas, municipalities, and ZIP codes.
+            </p>
+        </div>
+
+        <div>
+            <h3>Contextual Analysis</h3>
+            <p>
+                Location type, time of day, day of week, and offense type
+                were examined together to identify recurring patterns.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>
+        Prince George's County Crime Incident Analysis
+    </p>
+    <p>
+        Data analysis portfolio project
+    </p>
+</footer>
+
+</body>
+</html>
