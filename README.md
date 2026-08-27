@@ -197,18 +197,3 @@ PGC_Crime_Analysis/
 │   └── sq3_context/
 │
 └── README.md
-
-
-### One change I REALLY recommend
-
-Your opening is currently going to be the strongest part:
-
-> **What Changed. Where. Why.**
-
-That is much more analyst-y than starting with a giant paragraph about Python.
-
-And your pipeline is now easy for a recruiter to understand:
-
-**Raw Data → Profiling → Cleaning → Analysis → Visualization → Dashboard**
-
-That's exactly the story you want your portfolio to tell.
